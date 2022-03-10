@@ -5,7 +5,18 @@
 
 @font-face{
     font-family: "DidotM";
-    src: url("/font/Didot-HTF-M24-Medium.ttf") format("ttf");
+    src: url("/font/Didot-HTF-M24-Medium.ttf");
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    /*background-color: #ae896449;*/
+    background-color: #ede1d0d7;
+    /*background-color: #d7bb6781;*/
+    color: #272727;
 }
 
 /*menu*/
@@ -28,6 +39,10 @@ header p{
     text-transform: capitalize;
 }
 
+header p:nth-child(3){
+    padding: 0 40px;
+}
+
 header div{
     display: flex;
     justify-content: center;
@@ -41,18 +56,19 @@ nav{
     height: 60px;
     align-items: center;
     text-transform: uppercase;
-    font-family: "DidotM";
+    
 }
 
 nav a{
     position: relative;
     overflow: hidden;
     padding: 10px 5px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
 .calque{
-    border-bottom: #002395 3px solid;
+    border-bottom: #272727 3px solid;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -83,7 +99,7 @@ footer p{
 
 footer a{
     text-transform: uppercase;
-    font-family: "DidotM";
+    font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
 }
 
@@ -127,7 +143,40 @@ footer a{
       width: 900px;
       height: 500px;
       margin: 0 auto;
+      position: relative;
   }
+
+  .slide div p, .slide div a{
+      position: absolute;
+  }
+
+.slide div p{
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    background-color: #27272770;
+    text-transform: uppercase;
+}
+
+.slide div a{
+    bottom: 5px;
+    right: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #27272750;
+    color: white;
+    font-size: 20px;
+}
+
+.slide div a:hover{
+    color: #272727;
+    border: solid #272727 2px;
+    background-color: white;
+}
+
 
   .carousel-button {
     position: absolute;
@@ -137,18 +186,13 @@ footer a{
     font-size: 4rem;
     top: 50%;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
+    color: white;
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
     background-color: rgba(0, 0, 0, .1);
   }
-  
-  .carousel-button:hover{
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
-  }
-  
+    
   .carousel-button.prev {
     left: 1rem;
   }
@@ -160,8 +204,9 @@ footer a{
 
 h1{
     text-align: center;
-    margin: 40px 0;
+    margin: 40px auto;
     font-family: "Didot";
+    width: 600px;
 }
 
 

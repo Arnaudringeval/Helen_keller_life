@@ -36,3 +36,34 @@ if (window.innerWidth > 480){
     })
     }
     /*fin bouton up*/
+
+    /* changement taille menu*/
+if (window.innerWidth > 480){
+    $(window).scroll(function() {
+        let scroll = $(window).scrollTop();
+        if (scroll >= 1) {
+            $(".menu a div img").css('width', '70px');
+            $(".menu a div p").css('font-size', '36px');
+            $("header div").css('height', '70px')
+            $(".menu a div img").css('left', '240px');
+        }
+        else {
+            $(".menu a div img").css('width', '140px');
+            $(".menu a div p").css('font-size', '72px');
+            $("header div").css('height', '140px')
+            $(".menu a div img").css('left', '0px');
+        }
+    })}
+
+
+    /*
+    if (scroll >= 2) {
+        $("header div a img").css('width', '75px');
+        $(".menu a").css('font-size', '80%');
+        $(".menu").css('margin-top', '0px')
+    
+    }
+    else {
+        $("header div a img").css('width', '150px');
+        $(".menu a").css('font-size', '100%');
+        $(".menu").css('margin-top', '20px')*/

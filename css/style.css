@@ -14,7 +14,7 @@ p{
 
 body{
     /*background-color: #ae896449;*/
-    background-color: #ede1d0d7;
+    background-color: #efe5d7;
     /*background-color: #d7bb6781;*/
     color: #272727;
 }
@@ -24,6 +24,16 @@ body{
     width: 1200px;
     margin: 0 auto;
     position: relative;
+}
+
+.menu a{
+    display: block;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: #efe5d7;
 }
 
 header img{
@@ -56,7 +66,6 @@ nav{
     height: 60px;
     align-items: center;
     text-transform: uppercase;
-    
 }
 
 nav a{

@@ -1,4 +1,4 @@
-/* carrousel*/
+/* carousel*/
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
@@ -18,3 +18,21 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+/*fin carousel*/
+
+/*  bouton up*/
+if (window.innerWidth > 480){
+    $(window).scroll(function() {
+        let scroll = $(window).scrollTop();
+        if (scroll >= 200) {
+            $("#top").addClass("fixed");
+            $("#top").css('display', 'block');
+            $("#top").removeClass("invisible");
+        } else {
+            $("#top").removeClass("fixed");
+            $("#top").css('diplay', 'none');
+            $("#top").addClass("invisible");
+        }
+    })
+    }
+    /*fin bouton up*/

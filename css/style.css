@@ -236,6 +236,10 @@ h1{
     width: 600px;
 }
 
+.separation{
+    width: 500px;
+    margin: 20px auto 40px;
+}
 
   main{
       width: 1200px;
@@ -258,4 +262,34 @@ h1{
 
   .mention h3{
       text-transform: uppercase;
+  }
+
+
+  .portrait{
+      width: 300px;
+      border: 15px ridge #e7dbcb;
+      box-sizing: content-box;
+      margin: 0 auto 30px;
+  }
+
+.contenu{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+  .contenu div{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px auto 40px;
+  }
+
+  .contenu div img, .contenu div p{
+      width: 300px;
+      padding: 20px 30px;
+  }
+
+  .contenu div img{
+    border: 15px ridge #e7dbcb;
+    box-sizing: content-box;
   }

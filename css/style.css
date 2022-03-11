@@ -284,12 +284,22 @@ h1{
       margin: 20px auto 40px;
   }
 
-  .contenu div img, .contenu div p{
+  .contenu div img, .contenu div p, .contenu img{
       width: 300px;
       padding: 20px 30px;
   }
 
-  .contenu div img{
+  .contenu div img, .contenu img{
     border: 15px ridge #e7dbcb;
     box-sizing: content-box;
+  }
+
+  #savoir{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contenu img, .contenu a{
+      margin-bottom: 40px;
   }

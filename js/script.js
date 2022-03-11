@@ -54,16 +54,3 @@ if (window.innerWidth > 480){
             $(".menu a div img").css('left', '0px');
         }
     })}
-
-
-    /*
-    if (scroll >= 2) {
-        $("header div a img").css('width', '75px');
-        $(".menu a").css('font-size', '80%');
-        $(".menu").css('margin-top', '0px')
-    
-    }
-    else {
-        $("header div a img").css('width', '150px');
-        $(".menu a").css('font-size', '100%');
-        $(".menu").css('margin-top', '20px')*/

@@ -213,7 +213,7 @@ footer a{
     border: 0 solid;
     padding: 0 0 0 0;
     display: none;
-    background-color: white;
+   background-color: #efe5d7;
 }
 
 .invisible {
@@ -302,4 +302,18 @@ h1{
 
   .contenu img, .contenu a{
       margin-bottom: 40px;
+  }
+
+.galerie{
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+}
+
+  .galerie img{
+      padding: 10px 10px;
+      margin: 10px;
+      border: 15px ridge #e7dbcb;
+    box-sizing: content-box;
   }
